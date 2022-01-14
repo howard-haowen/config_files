@@ -1,9 +1,16 @@
+"=====================================================
+"" Config file for vanilla Vim
+"=====================================================
+
+" ===File path===
 " vim  : placed in $HOME/.vimrc
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" ===Set Vundle as the plugin manager===
+"=====================================================
+"" Set Vundle as the plugin manager
+"=====================================================
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
