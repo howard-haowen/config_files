@@ -1,6 +1,6 @@
-"=====================================================
+" =====================================================
 " Config file for both vanilla Vim and NeoVim
-"=====================================================
+" =====================================================
 
 " ===File path===
 " neovim  : placed in $HOME/.config/nvim/init.vim
@@ -9,11 +9,11 @@
 " curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 " https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-"=====================================================
-"=====================================================
+" =====================================================
+" =====================================================
 " The following is forked from https://github.com/fisadev/fisa-vim-config/blob/master/config.vim
-"=====================================================
-"=====================================================
+" =====================================================
+" =====================================================
 
 " Fisa-vim-config, a config for both Vim and NeoVim
 " http://vim.fisadev.com
@@ -30,11 +30,11 @@ set encoding=utf-8
 let using_neovim = has('nvim')
 let using_vim = !using_neovim
 
-"=====================================================
+" =====================================================
 " Vim-plug initialization
 " Avoid modifying this section, unless you are very 
 " sure of what you are doing
-"=====================================================
+" =====================================================
 
 let vim_plug_just_installed = 0
 if using_neovim
@@ -60,13 +60,13 @@ if vim_plug_just_installed
     :execute 'source '.fnameescape(vim_plug_path)
 endif
 
-"=====================================================
+" =====================================================
 " Obscure hacks done, you can now modify the rest of 
 " the config down below as you wish :)
 " IMPORTANT: some things in the config are vim or 
 " neovim specific. It's easy to spot, they are inside 
 " `if using_vim` or `if using_neovim` blocks.
-"=====================================================
+" =====================================================
 
 
 " =====================================================
@@ -74,7 +74,7 @@ endif
 " You can disable or add new ones here:
 " this needs to be here, so vim-plug knows we are 
 " declaring the plugins we want to use
-"=====================================================
+" =====================================================
 
 if using_neovim
     call plug#begin("~/.config/nvim/plugged")
@@ -82,9 +82,9 @@ else
     call plug#begin("~/.vim/plugged")
 endif
 
-"=====================================================
+" =====================================================
 " All plugins should be included below!
-"=====================================================
+" =====================================================
 
 " Override configs by directory
 Plug 'arielrossanigo/dir-configs-override.vim'
@@ -176,23 +176,23 @@ endif
 " Tell vim-plug we finished declaring plugins, so it can load them
 call plug#end()
 
-"=====================================================
+" =====================================================
 " All plugins should be included above!
-"=====================================================
+" =====================================================
 
-"=====================================================
+" =====================================================
 " Install plugins the first time vim runs
-"=====================================================
+" =====================================================
 
 if vim_plug_just_installed
     echo "Installing Bundles, please ignore key map error messages"
     :PlugInstall
 endif
 
-"=====================================================
+" =====================================================
 " Vim settings and mappings
 " You can edit them as you wish
-"=====================================================
+" =====================================================
  
 if using_vim
     " A bunch of things that are set by default in neovim, but not in vim
@@ -295,10 +295,10 @@ set shell=/bin/bash
 " (I use ipdb, but you can change it to whatever tool you use for debugging)
 au FileType python map <silent> <leader>b Oimport ipdb; ipdb.set_trace()<esc>
 
-"=====================================================
+" =====================================================
 " Plugins settings and mappings
 " Edit them as you wish.
-"=====================================================
+" =====================================================
 
 " Tagbar -----------------------------
 
@@ -481,11 +481,11 @@ else
     let g:webdevicons_enable = 0
 endif
 
-"=====================================================
+" =====================================================
 " Custom configurations. The idea is to leave "init.vim"
 " unchanged as much as possible, and add personal
 " configurations in the "custom.vim" file
-"=====================================================
+" =====================================================
 
 " Include user's custom nvim configurations
 if using_neovim
