@@ -1,0 +1,22 @@
+# Create a Brewfile with descriptions
+## brew bundle dump --describe --force
+# Remove everything that's not included in the Brewfile
+## brew bundle --force cleanup
+#######################################################
+
+# Add GitHub repos to the list that Brew tracks
+tap "homebrew/bundle"
+tap "homebrew/core"
+
+# Search tool like grep, but optimized for programmers
+brew "ack"
+# Distributed version control system
+brew "git"
+# GitHub command-line tool
+brew "gh"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
