@@ -1,14 +1,14 @@
-"=====================================================
+" =====================================================
 " Customized config file for both vanilla Vim and NeoVim
 " Settings here will override those in "init.vim"
-"=====================================================
+" =====================================================
 
 " ===File path===
 " neovim  : placed in $HOME/.config/nvim/custom.vim
 
-"=====================================================
+" =====================================================
 " Python
-"=====================================================
+" =====================================================
 
 " provide the execution path to python3
 let g:python3_host_prog = '/Library/Frameworks/Python.framework/Versions/3.8/bin/python3'
@@ -19,9 +19,9 @@ let g:python3_host_prog = '/Library/Frameworks/Python.framework/Versions/3.8/bin
 nmap ,p :w<CR>:!python3 %<CR>
 nmap ,t :w<CR>:!time python3 %<CR>
 
-"=====================================================
+" =====================================================
 " Key mappings
-"=====================================================
+" =====================================================
 
 " ESC key, only when in the Insert mode
 inoremap jk <ESC>
@@ -72,3 +72,9 @@ noremap <silent> <C-Down> :resize +3<CR>
 " remap ctrl-k and ctrl-j to go up and down in command-line-mode
 cnoremap <C-k> <up>
 cnoremap <C-j> <down>
+
+" Window size
+set lines=25
+set columns=80
+set wrap
+set linebreak
